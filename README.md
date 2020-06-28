@@ -35,17 +35,13 @@ Here is a run through of how to set up the application:
     * Open your preferred browser and view the app by opening the link **http://127.0.0.1:5000/**.
 
 ## Known Bugs
-* overlap of scroll features
+* Viewing of photo
 
 ## Versioning
-Articnews version 1.0
+Remmisma Galerie version 1.0
 Future releases should have the following features:
-* Ability to search news
-* Ability to favorite specific articles
-* Pagination.
-* be responsive
-* Bottom screen-Allows user to scroll down the page infinitely
-* Include various news categories such as sport,science and tech.
+* Ability to favorite specific photos
+* Include various photo categories such as sport,memes,history and nature
 
 
 
