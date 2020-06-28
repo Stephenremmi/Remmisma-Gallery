@@ -1,21 +1,17 @@
 # Remmisma-Gallery
-A photo booth web application to display images
+A photo booth web application that displays images
 
 ## Author
 [Stephen remmi](https://github.com/Stephenremmi)
 
 ## User Story
-* User can view all photos on index page
+* User can view all photos on index page ordered by the date they were posted
+* Hovering on an image will reveal more information about it; the title, description, location and time posted.
+* User can click on the copy button on an image to copy its url for sharing purposes
+* Clicking an image will toggle a lightbox with an expanded view of the image
+* User can navigate to other images while on the lightbox view.
 * User can search photos based on their categories
 * User can browse photos based on the location they were taken
-
-
-## Features
-Here are the features in summary:
-* A minimalistic landing page showing trending world news and a variety of news sources
-* Clickable news sources which direct the user to a page with article highlights from the particular source.
-
-#
 ## Requirements
 * This program requires python3.+ (and pip) installed, a guide on how to install python on various platforms can be found [here](https://docs.djangoproject.com/en/3.0/topics/install/)
 * Once python is installed, install the folowing external libraries provided in the requirements.txt file using pip
@@ -45,8 +41,6 @@ Remmisma Galerie version 1.0
 Future releases should have the following features:
 * Ability to favorite specific photos
 * Include various photo categories such as sport,memes,history and nature
-
-
 
 ## Technologies Used
 * Python 3.6
