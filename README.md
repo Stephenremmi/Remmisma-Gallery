@@ -4,7 +4,10 @@ A photo booth web application to display images
 ## Author
 [Stephen remmi](https://github.com/Stephenremmi)
 
-## Description
+## User Story
+* User can view all photos on index page
+* User can search photos based on their categories
+* User can browse photos based on the location they were taken
 
 
 ## Features
