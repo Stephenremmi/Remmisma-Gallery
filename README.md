@@ -34,13 +34,14 @@ Here is a run through of how to set up the application:
     .
 
 ## Known Bugs
-* Viewing of photo
+* None at the moment
 
 ## Versioning
 Remmisma Galerie version 1.0
 Future releases should have the following features:
 * Ability to favorite specific photos
 * Include various photo categories such as sport,memes,history and nature
+* Upvote,downvote and commenting User Interface.
 
 ## Technologies Used
 * Python 3.6
@@ -59,5 +60,8 @@ Future releases should have the following features:
 You can provide feedback or raise any issues/ bugs via email:
 * stephenremmi@gmail.com
 
-## [License](https://github.com/Stephenremmi/Articnews/blob/master/LICENSE)
+## Live Site
+Link to working demo is [here](https://remmisma-galerie.herokuapp.com/)
+
+## [License]()
 MIT license Copyright(c) 2020 **Stephen Remmi**
