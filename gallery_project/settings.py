@@ -69,11 +69,6 @@ TEMPLATES = [
     },
 ]
 
-from decouple import config
-UPLOADCARE = {
-    'pub_key': '36cda64e-7f8c-4e54-89f0-6a7b1d90a8dd',
-    'secret': 'q1dd0cz^s#se$^cl6u20b-jk=ipe$l98v%$9-s9quz%q_$eb#=',
-}
 
 WSGI_APPLICATION = 'gallery_project.wsgi.application'
 

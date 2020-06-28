@@ -7,7 +7,7 @@ urlpatterns = [
     url(r"^$", views.index, name="index"),
     url(r"^search/", views.search, name="search_results"),
     url(r"^browse/$", views.browse, name="browse"),
-    url(r"^location/(\d+)", views.location_filter, name="location"),
+    url(r"^category/(\d+)", views.category_filter, name="category"),
 ]
 
 if settings.DEBUG:

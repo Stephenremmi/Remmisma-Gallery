@@ -1,13 +1,25 @@
 {%extends "gallery/base.html"%}
 
 {%block content%}
+
+<div class="container">
+    {%if results == 1%}
+    <h2 class="text-center">{{results}} photo in {{category.name}}</h2>
+    {%else%}
+    <h2 class="text-center">{{results}} photos in {{category.name}}</h2>
+    {%endif%}
+    <hr class="style-one">
+</div>
+
+
 <div class="container">
     <div class="row">
         <div class="col-lg-3">
             <h2>Categories</h2>
             <div class="list-group">
                 {%for category in categories%}
-                <a href="{% url 'category' category.id%}" class="list-group-item list-group-item-action locale">{{category.name}}</a>
+                <a href="{% url 'category' category.id%}"
+                    class="list-group-item list-group-item-action locale">{{category.name}}</a>
                 {%endfor%}
             </div>
         </div>
@@ -17,7 +29,7 @@
                     <div class="row no-gutters">
                         {%for photo in photos%}
                         <div class="col-md-6 item zoom-on-hover">
-                            <a class="lightbox"data-caption="{{photo.name}}: {{photo.description}}">
+                            <a class="lightbox"  data-caption="{{photo.name}}: {{photo.description}}">
                                 <img class="img-fluid image" src="{{photo.photo_image.url}}">
                                 <span class="description">
                                     <span class="description-heading">{{photo.name}}</span>
@@ -28,12 +40,13 @@
                                                 {{photo.location.country}}
                                             </span></p>
                                         <span id="photo{{photo.id}}"
-                                            hidden>{{photo.image.cdn_url}}</span>
+                                            hidden>{{photo_image.url}}</span>
                                         <button onclick="copyToClipboard('photo{{photo.id}}')"
                                             class="btn no-border text-white"><i class="far fa-copy"></i></button>
                                     </div>
                                     <small style="font-size: 12px; float:right" class="ml-45"><i
-                                            class="far fa-clock"></i> {{photo.post_date | timesince}} ago</small>
+                                            class="far fa-clock"></i>
+                                        {{photo.post_date | timesince}} ago</small>
                                 </span>
                             </a>
                         </div>
@@ -44,6 +57,4 @@
         </div>
     </div>
 </div>
-
-
 {%endblock%}

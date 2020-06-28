@@ -1,7 +1,7 @@
 from django.db import models
 import pyperclip
 import random
-from pyuploadcare.dj.models import ImageField
+
 
 # Create your models here.
 class Location(models.Model):
@@ -23,10 +23,6 @@ class Location(models.Model):
         """
         return self.save()
 
-    @classmethod
-    def find_photos_by_location(cls, id):
-        return cls.objects.filter(photo__location__id = id)
-
 class Category(models.Model):
     """
     A class for the category the Photo falls under
@@ -45,6 +41,10 @@ class Category(models.Model):
         """
         return self.save()
 
+    @classmethod
+    def find_photos_by_category(cls, id):
+        return cls.objects.filter(photo__category__id = id)
+
 
 class Photo(models.Model):
     """
@@ -55,7 +55,7 @@ class Photo(models.Model):
     location = models.ForeignKey(Location,on_delete=models.CASCADE,)
     categories = models.ManyToManyField(Category)
     post_date = models.DateTimeField(auto_now_add=True)
-    image = models.ImageField(upload_to='browse/',height_field=None, width_field=None, max_length=100)
+    photo_image =  models.ImageField(upload_to='index/')
 
     def __str__(self):
         """
@@ -71,8 +71,8 @@ class Photo(models.Model):
 
     @classmethod
     def copy_url(cls, id):
-        photo = cls.objects.get(id = id)
-        pyperclip.copy(photo.image.url)
+        photo_image = cls.objects.get(id = id)
+        pyperclip.copy(photo_image.url)
   
     @classmethod
     def show_all_photos(cls):

@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from gallery.models import Photo, Location
+from gallery.models import Photo, Location,Category
 
 # Create your views here.
 def index(request):
@@ -23,17 +23,17 @@ def search(request):
 
 def browse(request):
     photos = Photo.show_all_photos()
-    locations = Location.objects.all()
+    categories = Category.objects.all()
     return render(request, "gallery/browse.html", context={"photos":photos,
-                                                           "locations":locations})
+                                                           "categories":categories})
 
-def location_filter(request, id):
-    photos = Photo.objects.filter(location__id = id)
+def category_filter(request, id):
+    photos = Photo.objects.filter(categories__id = id)
     results = len(photos)
-    location = Location.objects.get(id = id)
-    locations = Location.objects.all()
+    category = Category.objects.get(id = id)
+    categories = Category.objects.all()
 
-    return render(request, "gallery/location.html", context={"photos":photos,
+    return render(request, "gallery/category.html", context={"photos":photos,
                                                              "results":results,
-                                                             "location":location,
-                                                             "locations":locations})
+                                                             "category":category,
+                                                             "categories":categories})
