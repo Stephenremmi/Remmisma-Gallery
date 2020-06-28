@@ -13,7 +13,7 @@ Here are the features in summary:
 
 #
 ## Requirements
-* This program requires python3.+ (and pip) installed, a guide on how to install python on various platforms can be found [here](https://www.python.org/)
+* This program requires python3.+ (and pip) installed, a guide on how to install python on various platforms can be found [here](https://docs.djangoproject.com/en/3.0/topics/install/)
 * Once python is installed, install the folowing external libraries provided in the requirements.txt file using pip
 * Example: 
     * **`pip install flask`**
@@ -29,9 +29,7 @@ Here is a run through of how to set up the application:
     * **`source venv/bin/activate`**
         * Note that you can exit the virtual environment by running the command **`deactivate`**
 * **Step 4** : Download the all dependencies in the requirements.txt using **`pip install <name>`**
-* **Step 5** : Go to the [news API]() WEBSITE, sign up for a free account and generate an API key. 
-    * Create a file in your root directory called start.sh and store the API key like so **`export API_KEY="<your-key>"`**
-    * On the same file write down the command **`python3 manage.py server`** 
+* **Step 5** :
 * **Step 6** : On your terminal, run the following command, **`chmod a+x start.sh`**
     * You can now launch the application locally by running the command **`./start.sh`** 
     * Open your preferred browser and view the app by opening the link **http://127.0.0.1:5000/**.
