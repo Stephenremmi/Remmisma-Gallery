@@ -4,8 +4,7 @@
 [Stephen remmi](https://github.com/Stephenremmi)
 
 ## Description
-An application which lists and previews news articles from various sources using the [News API](https://newsapi.org/), made by python web framework, Flask.This web app keeps
-you up-to-date anytime and anywhere around the globe given you have a device able to connect to internet,internet access and free time to spare.
+
 
 ## Features
 Here are the features in summary:
