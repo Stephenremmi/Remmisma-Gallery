@@ -63,5 +63,5 @@ You can provide feedback or raise any issues/ bugs via email:
 ## Live Site
 Link to working demo is [here](https://remmisma-galerie.herokuapp.com/)
 
-## [License]()
+## [License](https://github.com/Stephenremmi/Remmisma-Gallery/blob/master/LICENSE)
 MIT license Copyright(c) 2020 **Stephen Remmi**
