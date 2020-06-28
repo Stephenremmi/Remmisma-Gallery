@@ -47,6 +47,14 @@ Future releases should have the following features:
 * Python 3.6
 * HTML  
 * CSS
+* Django 3.0.7
+* Postgresql
+* HTML5
+* CSS3
+* Javascript
+* jQuery 3.2.1
+* Bootstrap 4.3.1
+* Google Font API
 
 ## Support and contact details
 You can provide feedback or raise any issues/ bugs via email:
