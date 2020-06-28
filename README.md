@@ -1,4 +1,5 @@
 # Remmisma-Gallery
+A photo booth web application to display images
 
 ## Author
 [Stephen remmi](https://github.com/Stephenremmi)
