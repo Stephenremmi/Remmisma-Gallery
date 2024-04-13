@@ -55,9 +55,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'q1dd0cz^s#se$^cl6u20b-jk=ipe$l98v%$9-s9quz%q_$eb#='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['stephenremmi-galerie-5d8bad27eb41.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -111,9 +111,11 @@ WSGI_APPLICATION = 'gallery_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'gallery',
-        'USER': 'remmi',
-    'PASSWORD':'stephen',
+        'NAME': 'dn9h24g544kh4',
+        'USER': 'u4ak4dmdmu522o',
+    'PASSWORD':'p0793092712e0953deede75879a6cf6dd033eca74ce598ad5809b82c647a29840',
+    'HOST':'cb4l59cdg4fg1k.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
+    'PORT': '5432'
     }
 }
 
